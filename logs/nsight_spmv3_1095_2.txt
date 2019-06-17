@@ -1,2 +1,0 @@
-==ERROR== './benchmarks/3.out' does not exist or is not an executable.Please make sure to specify the absolute path to './benchmarks/3.out' if the executable is not in the local directory.
-==ERROR== './benchmarks/3.out' does not exist or is not an executable.Please make sure to specify the absolute path to './benchmarks/3.out' if the executable is not in the local directory.
