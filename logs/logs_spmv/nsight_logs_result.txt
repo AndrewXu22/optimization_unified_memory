@@ -1,3 +1,0 @@
-==ERROR== 'cost:0' does not exist or is not an executable.Please make sure to specify the absolute path to 'cost:0' if the executable is not in the local directory.
-==ERROR== 'cost:0' does not exist or is not an executable.Please make sure to specify the absolute path to 'cost:0' if the executable is not in the local directory.
-==ERROR== 'cost:0' does not exist or is not an executable.Please make sure to specify the absolute path to 'cost:0' if the executable is not in the local directory.
