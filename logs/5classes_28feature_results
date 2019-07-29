@@ -24,3 +24,26 @@ Weighted Avg.    0.914    0.021    0.913      0.914    0.913      0.892    0.992
 
 Gaussian:
 
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.981    0.003    0.987      0.981    0.984      0.980    0.999     0.998     UM
+                 0.998    0.002    0.993      0.998    0.996      0.994    1.000     1.000     AB
+                 0.772    0.068    0.747      0.772    0.759      0.695    0.967     0.881     PL
+                 0.736    0.056    0.762      0.736    0.749      0.689    0.969     0.886     RM
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     noUM
+Weighted Avg.    0.897    0.026    0.897      0.897    0.897      0.871    0.987     0.953     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1379    1   26    0    0 |    a = UM
+    2 1453    0    1    0 |    b = AB
+   16    2 1151  322    0 |    c = PL
+    0    7  364 1033    0 |    d = RM
+    0    0    0    0 1436 |    e = noUM
+    
+cfd+gaussian:
+
+ 
+
