@@ -1,3 +1,6 @@
+Random Forests:
+
+
 cfd+gaussian:
 
 === Detailed Accuracy By Class ===
@@ -64,5 +67,260 @@ Weighted Avg.    0.905    0.024    0.905      0.905    0.905      0.882    0.989
     0    7  352 1045    0 |    d = RM
     0    0    0    0 1436 |    e = noUM
 
+
+For cfd:
+
+Random Tree:
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.908    0.023    0.904      0.908    0.906      0.883    0.942     0.839     UM
+                 0.988    0.003    0.989      0.988    0.988      0.985    0.993     0.979     AB
+                 0.754    0.059    0.763      0.754    0.758      0.698    0.848     0.624     PL
+                 0.781    0.057    0.777      0.781    0.779      0.723    0.862     0.651     RM
+                 0.993    0.002    0.991      0.993    0.992      0.990    0.995     0.985     noUM
+Weighted Avg.    0.885    0.029    0.885      0.885    0.885      0.856    0.928     0.816     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1249   10   68   42    7 |    a = UM
+    5 1389    3    5    4 |    b = AB
+   79    0 1066  267    1 |    c = PL
+   47    4  259 1109    1 |    d = RM
+    1    2    2    5 1427 |    e = noUM
+    
+J48(C4.5)
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.010    0.960      0.967    0.964      0.955    0.982     0.936     UM
+                 0.992    0.002    0.991      0.992    0.991      0.989    0.996     0.990     AB
+                 0.817    0.050    0.804      0.817    0.810      0.762    0.931     0.814     PL
+                 0.788    0.048    0.807      0.788    0.797      0.747    0.929     0.800     RM
+                 0.994    0.001    0.994      0.994    0.994      0.993    0.998     0.995     noUM
+Weighted Avg.    0.911    0.022    0.911      0.911    0.911      0.889    0.967     0.907     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1331    2   11   27    5 |    a = UM
+    1 1395    4    3    3 |    b = AB
+   19    4 1154  236    0 |    c = PL
+   28    7  266 1119    0 |    d = RM
+    7    0    0    2 1428 |    e = noUM
     
     
+Bagging:
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.974    0.009    0.965      0.974    0.969      0.962    0.999     0.996     UM
+                 0.991    0.003    0.989      0.991    0.990      0.988    1.000     1.000     AB
+                 0.823    0.049    0.807      0.823    0.815      0.768    0.982     0.932     PL
+                 0.789    0.044    0.818      0.789    0.803      0.755    0.980     0.928     RM
+                 0.994    0.002    0.992      0.994    0.993      0.991    1.000     1.000     noUM
+Weighted Avg.    0.914    0.022    0.914      0.914    0.914      0.892    0.992     0.971     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1340    5    5   19    7 |    a = UM
+    0 1394    2    6    4 |    b = AB
+   22    7 1163  221    0 |    c = PL
+   26    2  270 1121    1 |    d = RM
+    1    2    1    4 1429 |    e = noUM
+
+LogitBoost:
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.983    0.026    0.903      0.983    0.942      0.928    0.997     0.984     UM
+                 0.986    0.001    0.997      0.986    0.991      0.989    1.000     0.999     AB
+                 0.829    0.067    0.757      0.829    0.791      0.737    0.973     0.903     PL
+                 0.682    0.037    0.822      0.682    0.746      0.693    0.970     0.898     RM
+                 0.992    0.002    0.992      0.992    0.992      0.990    1.000     1.000     noUM
+Weighted Avg.    0.894    0.026    0.894      0.894    0.892      0.867    0.988     0.957     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1353    2   12    5    4 |    a = UM
+   12 1386    3    2    3 |    b = AB
+   35    0 1172  202    4 |    c = PL
+   91    2  358  969    0 |    d = RM
+    7    0    4    1 1425 |    e = noUM
+    
+Gaussian:
+
+RandomTree:
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.983    0.006    0.977      0.983    0.980      0.975    0.989     0.963     UM
+                 0.977    0.007    0.973      0.977    0.975      0.969    0.985     0.955     AB
+                 0.741    0.062    0.757      0.741    0.749      0.685    0.840     0.615     PL
+                 0.756    0.062    0.747      0.756    0.751      0.690    0.847     0.612     RM
+                 0.999    0.000    0.999      0.999    0.999      0.999    0.999     0.998     noUM
+Weighted Avg.    0.890    0.028    0.890      0.890    0.890      0.863    0.931     0.828     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1382    5   19    0    0 |    a = UM
+    8 1423   12   13    0 |    b = AB
+   23   15 1105  347    1 |    c = PL
+    0   20  323 1061    0 |    d = RM
+    2    0    0    0 1434 |    e = noUM
+ 
+J48
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.987    0.002    0.991      0.987    0.989      0.986    0.995     0.987     UM
+                 0.997    0.001    0.997      0.997    0.997      0.996    0.998     0.995     AB
+                 0.708    0.044    0.809      0.708    0.755      0.699    0.921     0.735     PL
+                 0.833    0.074    0.732      0.833    0.779      0.723    0.928     0.785     RM
+                 0.999    0.000    1.000      0.999    1.000      1.000    1.000     0.999     noUM
+Weighted Avg.    0.903    0.024    0.906      0.903    0.903      0.880    0.968     0.899     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1388    1   17    0    0 |    a = UM
+    2 1451    0    3    0 |    b = AB
+   10    0 1055  426    0 |    c = PL
+    0    3  232 1169    0 |    d = RM
+    1    0    0    0 1435 |    e = noUM
+
+Bagging:
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.989    0.004    0.982      0.989    0.986      0.982    1.000     0.999     UM
+                 0.995    0.002    0.992      0.995    0.993      0.992    1.000     1.000     AB
+                 0.807    0.060    0.778      0.807    0.792      0.737    0.973     0.902     PL
+                 0.758    0.047    0.796      0.758    0.777      0.724    0.975     0.907     RM
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     noUM
+Weighted Avg.    0.909    0.023    0.909      0.909    0.909      0.887    0.989     0.961     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1391    1   14    0    0 |    a = UM
+    6 1448    0    2    0 |    b = AB
+   15    3 1203  270    0 |    c = PL
+    4    7  329 1064    0 |    d = RM
+    0    0    0    0 1436 |    e = noUM
+    
+LogitBoost:
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.001    0.996      0.980    0.988      0.985    1.000     0.999     UM
+                 0.998    0.002    0.992      0.998    0.995      0.994    1.000     0.998     AB
+                 0.832    0.067    0.764      0.832    0.797      0.742    0.971     0.895     PL
+                 0.740    0.042    0.810      0.740    0.773      0.723    0.972     0.895     RM
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     noUM
+Weighted Avg.    0.910    0.023    0.911      0.910    0.910      0.888    0.988     0.957     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 1378    1   27    0    0 |    a = UM
+    2 1453    0    1    0 |    b = AB
+    4    3 1241  243    0 |    c = PL
+    0    8  357 1039    0 |    d = RM
+    0    0    0    0 1436 |    e = noUM
+    
+cfd+gaussian:
+
+LogitBoost:
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.877    0.026    0.869      0.877    0.873      0.849    0.993     0.968     UM
+                 0.960    0.024    0.910      0.960    0.934      0.917    0.995     0.983     AB
+                 0.590    0.040    0.807      0.590    0.682      0.621    0.950     0.848     PL
+                 0.865    0.097    0.712      0.865    0.781      0.719    0.972     0.909     RM
+                 0.995    0.001    0.998      0.995    0.996      0.995    1.000     1.000     noUM
+Weighted Avg.    0.852    0.039    0.855      0.852    0.848      0.813    0.981     0.938     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 3318   24   87  350    4 |    a = UM
+   24 4573  117   47    2 |    b = AB
+  360  351 3014 1377    4 |    c = PL
+  103   65  515 4393    1 |    d = RM
+   11   13    0    0 4551 |    e = noUM
+   
+ Bagging:
+ 
+ === Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.979    0.004    0.980      0.979    0.979      0.975    0.999     0.997     UM
+                 0.996    0.003    0.987      0.996    0.991      0.989    1.000     1.000     AB
+                 0.788    0.040    0.845      0.788    0.815      0.767    0.979     0.935     PL
+                 0.854    0.057    0.806      0.854    0.830      0.781    0.980     0.933     RM
+                 0.998    0.001    0.996      0.998    0.997      0.996    1.000     1.000     noUM
+Weighted Avg.    0.917    0.023    0.917      0.917    0.917      0.894    0.991     0.971     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 3703   14   35   25    6 |    a = UM
+    1 4743    9    3    7 |    b = AB
+   39   35 4021 1011    0 |    c = PL
+   33   11  691 4338    4 |    d = RM
+    3    4    0    2 4566 |    e = noUM
+  
+  
+J48
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.005    0.975      0.980    0.977      0.973    0.992     0.967     UM
+                 0.991    0.004    0.986      0.991    0.988      0.986    0.997     0.990     AB
+                 0.757    0.037    0.851      0.757    0.801      0.752    0.930     0.795     PL
+                 0.869    0.066    0.787      0.869    0.826      0.776    0.936     0.820     RM
+                 0.996    0.000    0.998      0.996    0.997      0.996    0.999     0.997     noUM
+Weighted Avg.    0.912    0.024    0.914      0.912    0.912      0.889    0.968     0.908     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 3708    2   36   34    3 |    a = UM
+    4 4718   31    6    4 |    b = AB
+   37   50 3867 1151    1 |    c = PL
+   51    7  607 4411    1 |    d = RM
+    5    6    3    3 4558 |    e = noUM
+   
+   
+ RandomTree
+ === Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.943    0.011    0.942      0.943    0.943      0.932    0.966     0.898     UM
+                 0.959    0.010    0.960      0.959    0.960      0.949    0.974     0.930     AB
+                 0.757    0.067    0.760      0.757    0.758      0.690    0.845     0.628     PL
+                 0.791    0.060    0.786      0.791    0.789      0.729    0.866     0.667     RM
+                 0.996    0.001    0.998      0.996    0.997      0.996    0.998     0.994     noUM
+Weighted Avg.    0.883    0.032    0.883      0.883    0.883      0.851    0.925     0.814     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e   <-- classified as
+ 3567   18  126   70    2 |    a = UM
+   12 4568  141   36    6 |    b = AB
+  133  126 3863  982    2 |    c = PL
+   66   40  954 4016    1 |    d = RM
+    7    4    2    5 4557 |    e = noUM
